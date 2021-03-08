@@ -1,0 +1,32 @@
+# cd
+alias ..="cd .."
+alias ../..="cd ../.."
+alias ../../..="cd ../../.."
+alias cdp="cd ~/Projects"
+
+# ls
+alias ls="ls --color=auto"
+alias la="ls -la --color=auto"
+alias l.='ls -d .* --color=auto'
+
+# sudo / doas
+alias fg="sudo !!"
+
+# text editor
+alias v="vim"
+alias v.="vim ."
+alias code="visual-studio-code"
+alias vs="visual-studio-code"
+alias codium="vscodium-bin"
+
+# Portage
+alias semerge="emerge --search "
+alias makeconf="sudo vim /etc/portage/make.conf"
+alias sysupdate="sudo emerge --sync; sudo emerge -uDNvat @world"
+
+# Compiling
+alias mk="./configure; make; sudo make install"
+
+# Safety
+alias rm\ -rf\ ~="false"
+alias sudo\ rm\ -rf\ ~="false"
